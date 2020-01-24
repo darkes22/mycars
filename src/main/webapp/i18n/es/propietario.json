@@ -1,0 +1,24 @@
+{
+  "mycarsApp": {
+    "propietario": {
+      "home": {
+        "title": "Propietarios",
+        "createLabel": "Crear nuevo Propietario",
+        "createOrEditLabel": "Crear o editar Propietario",
+        "notFound": "Ningún Propietarios encontrado"
+      },
+      "created": "Un nuevo Propietario ha sido creado con el identificador {{ param }}",
+      "updated": "Un Propietario ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Propietario ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Propietario {{ id }}?"
+      },
+      "detail": {
+        "title": "Propietario"
+      },
+      "nombre": "Nombre",
+      "apellidos": "Apellidos",
+      "dni": "Dni"
+    }
+  }
+}

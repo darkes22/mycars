@@ -1,0 +1,105 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="mycarsApp.coche.home.title">Coches</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-coche" [routerLink]="['/coche/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="mycarsApp.coche.home.createLabel">
+            Create a new Coche
+            </span>
+        </button>
+    </h2>
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="alert alert-warning" *ngIf="coches?.length === 0">
+        <span jhiTranslate="mycarsApp.coche.home.notFound">No coches found</span>
+    </div>
+    <div class="table-responsive" *ngIf="coches?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+            <tr>
+            <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+            <th scope="col" ><span jhiTranslate="mycarsApp.coche.marca">Marca</span></th>
+            <th scope="col" ><span jhiTranslate="mycarsApp.coche.modelo">Modelo</span></th>
+            <th scope="col" ><span jhiTranslate="mycarsApp.coche.matricula">Matricula</span></th>
+            <th scope="col" ><span jhiTranslate="mycarsApp.coche.precio">Precio</span></th>
+            <th scope="col" ><span jhiTranslate="mycarsApp.coche.vendido">Vendido</span></th>
+            <th scope="col" ><span >Dueño</span></th>
+            <th scope="col" ><span jhiTranslate="mycarsApp.coche.fechaventa">Fechaventa</span></th>
+            <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+
+        
+
+
+            <tr *ngFor="let coche of coches ;trackBy: trackId" [ngClass]="{'text-danger': coche.vendido}">
+
+                    
+    
+                <td><a [routerLink]="['/coche', coche.id, 'view' ]">{{coche.id}}</a></td>
+                <td>{{coche.marca}}</td>
+                <td>{{coche.modelo}}</td>
+                <td>{{coche.matricula}}</td>
+                <td>{{coche.precio}}</td>
+                <td>{{coche.vendido}}</td>
+                <td>{{coche.owner}}</td>
+                <td>{{coche.fechaventa | date:'mediumDate'}}</td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button *ngIf="!coche.vendido" type="button" 
+                                class="btn btn-success btn-sm" (click)="cambiarEstadoVenta(coche)"
+                                ngHide= "checked">
+                            <fa-icon [icon]="'money-bill-alt'"> </fa-icon>
+                            <span class="d-none d-md-inline"> Comprar</span>
+                        </button>    
+                        <button type="submit"
+                                [routerLink]="['/coche', coche.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" >Ver Detalles</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/coche', coche.id, 'edit']"
+                                class="btn btn-warning btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit" (click)="delete(coche)"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="text-center">
+    <img (click)="pulsar(0)" [src]=papelAssets  height="250" width="250" class="rounded">
+    <img (click)="pulsar(1)" [src]=piedraAssets height="250" width="250" class="rounded float-left">
+    <img (click)="pulsar(2)" [src]=tijeraAssets height="250" width="250" class="rounded float-right">   
+</div>
+<div class="col-12" style="text-align: center ;">
+    <H2> {{this.estado}} </H2>
+</div>
+
+<div class="col-12" style="text-align: left ;">
+    <H2> {{this.jugadamia}} </H2>
+</div>
+
+<div class="col-12" style="text-align: right ;">
+    <H2> {{this.jugadadepc}} </H2>
+</div>
+
+
+
+
+<!-- <img src="../../../content/images/piedra.jpg" style="width:250px;height:250px">
+<img src="../../../content/images/papel.jpg"  style="width:250px;height:250px">
+<img src="../../../content/images/tijera.jpg" style="width:250px;height:250px">
+<img src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/otramedicina/G/Gemoterapia-propiedades-de-las-piedras-naturales-5.jpg" style="width:250px;height:250px"> -->

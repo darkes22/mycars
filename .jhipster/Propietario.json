@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "nombre",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "apellidos",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dni",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20200123125441",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "propietario",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

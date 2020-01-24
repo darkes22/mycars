@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="coche">
+            <h2><span jhiTranslate="mycarsApp.coche.detail.title">Coche</span> {{coche.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="mycarsApp.coche.marca">Marca</span></dt>
+                <dd>
+                    <span>{{coche.marca}}</span>
+                </dd>
+                <dt><span jhiTranslate="mycarsApp.coche.modelo">Modelo</span></dt>
+                <dd>
+                    <span>{{coche.modelo}}</span>
+                </dd>
+                <dt><span jhiTranslate="mycarsApp.coche.matricula">Matricula</span></dt>
+                <dd>
+                    <span>{{coche.matricula}}</span>
+                </dd>
+                <dt><span jhiTranslate="mycarsApp.coche.precio">Precio</span></dt>
+                <dd>
+                    <span>{{coche.precio}}</span>
+                </dd>
+                <dt><span jhiTranslate="mycarsApp.coche.vendido">Vendido</span></dt>
+                <dd>
+                    <span>{{coche.vendido}}</span>
+                </dd>
+                <dt><span jhiTranslate="mycarsApp.coche.fechaventa">Fechaventa</span></dt>
+                <dd>
+                    <span>{{coche.fechaventa}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/coche', coche.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

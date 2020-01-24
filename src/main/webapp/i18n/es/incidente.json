@@ -1,0 +1,24 @@
+{
+  "mycarsApp": {
+    "incidente": {
+      "home": {
+        "title": "Incidentes",
+        "createLabel": "Crear nuevo Incidente",
+        "createOrEditLabel": "Crear o editar Incidente",
+        "notFound": "Ningún Incidentes encontrado"
+      },
+      "created": "Un nuevo Incidente ha sido creado con el identificador {{ param }}",
+      "updated": "Un Incidente ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Incidente ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Incidente {{ id }}?"
+      },
+      "detail": {
+        "title": "Incidente"
+      },
+      "fallo": "Fallo",
+      "descripcion": "Descripcion",
+      "coche": "Coche"
+    }
+  }
+}

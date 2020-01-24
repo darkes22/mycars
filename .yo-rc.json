@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.melit.mycars",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "monolith",
+    "baseName": "mycars",
+    "packageName": "com.melit.mycars",
+    "packageFolder": "com/melit/mycars",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "N2VkOWM0MTkwZDVmYjBiM2IxODg3ZGE5M2JjYTc0N2FhNmM1NzU1ZmQyZWQwMmI2NjNhY2M5M2YwOTVhODRmOGRiYjAwMGUxYWRhZDMwYjVkYmE1YmQ0M2M1Y2EyZWMwNjk0MWI2NjAxN2JjY2Y3YmI3MGNhZWJmMDFmZjlkNTI=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1579612158288,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": ["es", "en"],
+    "blueprints": []
+  }
+}

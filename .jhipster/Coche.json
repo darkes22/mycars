@@ -1,0 +1,43 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "marca",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "modelo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "matricula",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "unique"
+            ]
+        },
+        {
+            "fieldName": "precio",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "vendido",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "fechaventa",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20200121131403",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "coche",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

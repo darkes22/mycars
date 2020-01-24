@@ -1,0 +1,27 @@
+{
+  "mycarsApp": {
+    "coche": {
+      "home": {
+        "title": "Coches",
+        "createLabel": "Create a new Coche",
+        "createOrEditLabel": "Create or edit a Coche",
+        "notFound": "No Coches found"
+      },
+      "created": "A new Coche is created with identifier {{ param }}",
+      "updated": "A Coche is updated with identifier {{ param }}",
+      "deleted": "A Coche is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Coche {{ id }}?"
+      },
+      "detail": {
+        "title": "Coche"
+      },
+      "marca": "Marca",
+      "modelo": "Modelo",
+      "matricula": "Matricula",
+      "precio": "Precio",
+      "vendido": "Vendido",
+      "fechaventa": "Fechaventa"
+    }
+  }
+}

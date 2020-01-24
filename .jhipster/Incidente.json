@@ -1,0 +1,32 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "coche",
+            "otherEntityName": "coche",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "incidente"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "fallo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "descripcion",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20200121131758",
+    "dto": "no",
+    "searchEngine": false,
+    "service": "no",
+    "entityTableName": "incidente",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
